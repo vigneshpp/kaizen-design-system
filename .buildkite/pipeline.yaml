@@ -9,7 +9,7 @@ x-defaults: &defaults
   plugins:
     - docker-compose#v3.0.3:
         run: build
-    - cultureamp/cache-buildkite-plugin:
+    - cultureamp/cache:
         cache_key: "v1-cache-{{ checksum 'yarn.lock' }}"
         paths: ["node_modules/"]
 
