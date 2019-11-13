@@ -2,12 +2,16 @@ env:
   KAIZEN_ROLE_ARN: ${BRANCH_ROLE_ARN}
   KAIZEN_DOMAIN_NAME: ${BRANCH_DOMAIN_NAME}
   KAIZEN_DISTRIBUTION_ID: ${BRANCH_DISTRIBUTION_ID}
+  BUILDKITE_PLUGIN_CACHE_S3_BUCKET_NAME: kaizen-cache
 
 x-defaults: &defaults
   agent_query_rules: ["queue=build-unrestricted"]
   plugins:
     - docker-compose#v3.0.3:
         run: build
+    - cultureamp/cache-buildkite-plugin:
+        cache_key: "v1-cache-{{ checksum 'yarn.lock' }}"
+        paths: ["node_modules/"]
 
 steps:
   - name: ":balloon: Release"
