@@ -1,4 +1,4 @@
-import { Button } from "@kaizen/component-library"
+import { Button, Heading } from "@kaizen/component-library"
 import { graphql, useStaticQuery, withPrefix } from "gatsby"
 import * as React from "react"
 import { Content, ContentOnly } from "../components/ContentOnly"
@@ -9,13 +9,16 @@ import PageHeader from "../components/PageHeader"
 const styles = require("./index.scss")
 
 const HomePageHeader = (
-  <PageHeader
-    headingText="Kaizen"
-    summaryParagraph={
-      "Kaizen is Culture Amp’s design system. It’s the single source of truth\nfor our UX guidelines, design assets, and front-end code to help\nCulture Amp’s teams rapidly create a world-class experience."
-    }
-    headingOnly
-  />
+  <>
+    <Heading variant="heading-1">Cool beans!</Heading>
+    <PageHeader
+      headingText="Kaizen"
+      summaryParagraph={
+        "Kaizen is Culture Amp’s design system. It’s the single source of truth\nfor our UX guidelines, design assets, and front-end code to help\nCulture Amp’s teams rapidly create a world-class experience."
+      }
+      headingOnly
+    />
+  </>
 )
 
 const FooterExtraContent = () => (
