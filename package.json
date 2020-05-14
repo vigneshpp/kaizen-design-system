@@ -64,10 +64,12 @@
     "@types/chalk": "^2.2.0",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
+    "@types/puppeteer": "^2.1.0",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/storybook__react": "^5.2.1",
     "@types/webpack": "^4.39.1",
+    "axe-puppeteer": "^1.1.0",
     "babel-elm-assets-plugin": "^1.2.2",
     "babel-loader": "^8.0.6",
     "chalk": "^2.4.2",
@@ -92,6 +94,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
+    "puppeteer": "^3.0.4",
     "react": "^16.9.0",
     "react-docgen-typescript-loader": "^3.7.1",
     "react-dom": "^16.9.0",
@@ -112,11 +115,11 @@
   "devDependencies": {
     "@storybook/addon-docs": "^5.3.17",
     "@storybook/codemod": "^5.3.9",
-    "lint-staged": "^10.2.2",
     "@storybook/csf": "^0.0.1",
     "@storybook/node-logger": "^5.3.9",
     "husky": "^4.2.5",
     "jscodeshift": "^0.7.0",
+    "lint-staged": "^10.2.2",
     "storybook-chromatic": "^3.4.1"
   },
   "resolutions": {
