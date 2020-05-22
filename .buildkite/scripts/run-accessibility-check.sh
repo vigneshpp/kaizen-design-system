@@ -1,0 +1,1 @@
+ts-node ./check-storybook-accessibility.ts
