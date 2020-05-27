@@ -10,6 +10,7 @@
     "node": "^12.16.3"
   },
   "scripts": {
+    "storybook-axe": "yarn ts-node storybook/bin/check-storybook-accessibility",
     "ts-node": "TS_NODE_TRANSPILE_ONLY=true ts-node --project storybook/tsconfig.storybook.json",
     "storybook": "yarn ts-node node_modules/.bin/start-storybook -c storybook",
     "storybook:build": "yarn ts-node node_modules/.bin/build-storybook -c storybook -o storybook/public",
