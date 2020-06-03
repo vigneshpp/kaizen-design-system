@@ -7,7 +7,7 @@
     "build": "yarn clean && yarn prepublish",
     "build:watch": "yarn clean && yarn prepublish --watch",
     "clean": "rimraf '*.d.ts' '*.js' '*.map' 'KaizenDraft/**/*.d.ts' 'KaizenDraft/**/*.js' 'KaizenDraft/**/*.map'",
-    "test-pack": "yarn pack && mkdir test-import && cd test-import && cp -a ../index.spec.tsx ./index.spec.tsx && yarn init -y && yarn add ../kaizen-draft-modal-v2.2.4.tgz && jest"
+    "test-pack": "yarn pack && mkdir test-import && cd test-import && cp -a ../index.spec.tsx ./index.spec.tsx && yarn init -y && yarn add ../kaizen-draft-modal-v2.2.4.tgz"
   },
   "repository": {
     "type": "git",

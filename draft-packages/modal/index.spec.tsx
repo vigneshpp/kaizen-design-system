@@ -1,11 +1,11 @@
+import { ConfirmationModal } from "@kaizen/draft-modal"
 import { cleanup, render } from "@testing-library/react"
 import * as React from "react"
-import { ConfirmationModal } from "./index"
 
 afterEach(cleanup)
 
-describe("<Box />", () => {
-  it("renders the correct classes for a default box", () => {
+describe("<ConfirmationModal />", () => {
+  it("test-pack - renders the modal", () => {
     const { getByText } = render(
       <ConfirmationModal
         isOpen={true}
@@ -19,6 +19,6 @@ describe("<Box />", () => {
         </div>
       </ConfirmationModal>
     )
-    expect(getByText("Additional subtext")).toEqual(true)
+    expect(getByText("Positive title")).toBeTruthy()
   })
 })
