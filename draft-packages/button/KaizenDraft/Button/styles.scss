@@ -1,4 +1,3 @@
-@import "~@kaizen/component-library/styles/grid";
 @import "~@kaizen/deprecated-component-library-helpers/styles/color";
 @import "~@kaizen/deprecated-component-library-helpers/styles/layout";
 @import "~@kaizen/design-tokens/sass/color";
@@ -38,7 +37,8 @@ $caButton-verticalPaddingForm: calc(
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: $kz-typography-button-primary-font-family;
+  font-family: $kz-typography-button-primary-font-family, Helvetica, Arial,
+    sans-serif;
   font-weight: $kz-typography-button-primary-font-weight;
   font-size: $kz-typography-button-primary-font-size;
   line-height: $kz-typography-button-primary-line-height;
@@ -178,11 +178,15 @@ $caButton-verticalPaddingForm: calc(
 }
 
 %caButtonSecondary {
-  font-family: $kz-typography-button-secondary-font-family;
+  font-family: $kz-typography-button-secondary-font-family, Helvetica, Arial,
+    sans-serif;
   font-weight: $kz-typography-button-secondary-font-weight;
   font-size: $kz-typography-button-secondary-font-size;
   line-height: $kz-typography-button-secondary-line-height;
   letter-spacing: $kz-typography-button-secondary-letter-spacing;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &:not(:disabled) {
     background: transparent;
